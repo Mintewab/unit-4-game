@@ -1,7 +1,7 @@
 
-var Jewels = new Array();
+var jewels = new Array();
 var jewelValues = new Array();
-var jewelShow = new Array();
+var jewelshow = new Array();
 
 var goalTotal = 0;
 var playerTotal = 0;
@@ -15,8 +15,8 @@ var t = "X";
 var A = new Array();
 
 
-function GameStart() {
-    Jewels = document.getElementsByTagName("button");
+function gameStart() {
+    jewels = document.getElementsByTagName("button");
 
     playerTotal = 0;
 
@@ -24,30 +24,32 @@ function GameStart() {
         //pick a random # from 1 to 12, 
         jewelValues[i] = Math.floor(Math.random() * 12) + 1;
 
-        jewelShow[i] = 0;
-        //Jewels[i].innerHTML=jewelValues[i];
+        jewelshow[i] = 0;
     }
     goalTotal = Math.floor(Math.random() * 102) + 19;
-    //document.getElementById("Info3").innerHTML = "goal total = "+ goalTotal;
-    document.getElementById("DisplayGoalTotal").innerHTML = "Goal Total = " + goalTotal;
-    document.getElementById("DisplayPlayerTotal").innerHTML = "Your Total = " + playerTotal;
+
+    $("#displayGoalTotal").text("Goal Total = " + goalTotal);
+    $("#displayPlayerTotal").text("Your Total = " + playerTotal);
+
 
     for (i = 0; i < 4; i++) {
-        if (jewelShow[i] > 0) { Jewels[i].innerHTML = jewelValues[i] }
-        else { Jewels[i].innerHTML = "?" }
+        if (jewelshow[i] > 0) { jewels[i].innerHTML = jewelValues[i] }
+        //else { jewels[i].innerHTML = "?" }
     }
-    document.getElementById("WinsDisplay").innerHTML = "Wins: " + wins;
-    document.getElementById("LosesDisplay").innerHTML = "Loses: " + loses;
+    $("#winsDisplay").text("Wins: " + wins);
+    $("#losesDisplay").text("Loses: " + loses);
+
 }
 function JewelClick(i7) {
-    jewelShow[i7] = 1;
+    jewelshow[i7] = 1;
     playerTotal += jewelValues[i7];
 
-    document.getElementById("DisplayPlayerTotal").innerHTML = "Your Total = " + playerTotal;
+    $("#displayPlayerTotal").text("Your Total = " + playerTotal);
+
 
     for (i = 0; i < 4; i++) {
-        if (jewelShow[i] > 0) { Jewels[i].innerHTML = jewelValues[i] }
-        else { Jewels[i].innerHTML = "?" }
+        if (jewelshow[i] > 0) { jewels[i].innerHTML = jewelValues[i] }
+        //else { jewels[i].innerHTML = "?" }
     }
     if (playerTotal == goalTotal) {
         //t = "You WIN!!!";
@@ -58,5 +60,5 @@ function JewelClick(i7) {
         loses++;
     }
     //document.getElementById("Info").innerHTML = t;
-    if (playerTotal == goalTotal || playerTotal > goalTotal) { GameStart() }
+    if (playerTotal == goalTotal || playerTotal > goalTotal) { gameStart() }
 }

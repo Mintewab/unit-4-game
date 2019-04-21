@@ -1,31 +1,44 @@
+img {
+    height: 50px;
+    width: 50px;
+}
+
 body {
-    background-image: url("img_crystal-background.jpg");
     background-color: #ebc6d9;
 }
 
-.jumbotron {
-    padding: 30px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 50px;
+#crystalRow {
+    padding: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 100px;
+    width: 602px;
     background-color: #4c1a34;
 }
 
-.jumbotron-text-white {
+#instructiondiv {
+    padding: 30px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 20;
+    line-height: 30px;
+    background-color: #4c1a34;
+}
+
+#title-div {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 25px;
+    background-color: #4c1a34;
+    text-align: center
+}
+
+#divcolor {
     background-color: #8c6278;
 }
 
-.row1 {
-    padding: 5px;
-    margin-bottom: 5px;
-    font-size: 15px;
-    font-weight: 10;
-    line-height: 100px;
-    background-color: #4c1a34;
-}
-
-.row {
+#Computer-generated-div {
     padding: 25px;
     margin-bottom: 5px;
     font-size: 15px;
@@ -34,25 +47,16 @@ body {
     background-color: #4c1a34;
 }
 
-.computer-generated {
+#Computergenerateddivcolor {
     background-color: #62898c;
     height: 100px;
     width: 200px;
 }
 
-.Wins-losses-div-box {
+#divWincolor {
     background-color: #62898c;
     height: 100px;
-    widows: 175px;
-}
-
-.row {
-    padding: 25px;
-    margin-bottom: 5px;
-    font-size: 15px;
-    line-height: 100px;
-    width: 350px;
-    background-color: #4c1a34;
+    width: 150px;
 }
 
 .crystals-buttons {
@@ -60,6 +64,15 @@ body {
     margin-bottom: 2px;
     font-size: 15px;
     line-height: 50px;
+    width: 500px;
+    background-color: #4c1a34
+}
+
+#totaldiv {
+    padding: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 100px;
     width: 300px;
     background-color: #4c1a34;
 }
