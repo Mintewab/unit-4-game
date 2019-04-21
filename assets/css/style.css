@@ -1,0 +1,65 @@
+body {
+    background-image: url("img_crystal-background.jpg");
+    background-color: #ebc6d9;
+}
+
+.jumbotron {
+    padding: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 50px;
+    background-color: #4c1a34;
+}
+
+.jumbotron-text-white {
+    background-color: #8c6278;
+}
+
+.row1 {
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 10;
+    line-height: 100px;
+    background-color: #4c1a34;
+}
+
+.row {
+    padding: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 100px;
+    width: 600px;
+    background-color: #4c1a34;
+}
+
+.computer-generated {
+    background-color: #62898c;
+    height: 100px;
+    width: 200px;
+}
+
+.Wins-losses-div-box {
+    background-color: #62898c;
+    height: 100px;
+    widows: 175px;
+}
+
+.row {
+    padding: 25px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 100px;
+    width: 350px;
+    background-color: #4c1a34;
+}
+
+.crystals-buttons {
+    padding: 3px;
+    margin-bottom: 2px;
+    font-size: 15px;
+    line-height: 50px;
+    width: 300px;
+    background-color: #4c1a34;
+}
